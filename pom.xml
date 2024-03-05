@@ -12,6 +12,7 @@
         <module>Rate-Limiter</module>
         <module>Vending-Machine</module>
         <module>Logger-Chain-Responsibility</module>
+        <module>Consistent-Hashing</module>
     </modules>
 
 
