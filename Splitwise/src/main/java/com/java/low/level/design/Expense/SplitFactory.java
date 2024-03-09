@@ -6,16 +6,17 @@ import com.java.low.level.design.Expense.Split.PercentageSplit;
 import com.java.low.level.design.Expense.Split.UnequalSplit;
 
 public class SplitFactory {
-    public static ExpenseSplit getSplitObject(SplitType splitType) {
-        switch (splitType) {
-            case EQUAL:
-                return new EqualSplit();
-            case UNEQUAL:
-                return new UnequalSplit();
-            case PERCENTAGE:
-                return new PercentageSplit();
-            default:
-                return null;
-        }
+
+  public static ExpenseSplit getSplitObject(SplitType splitType) {
+    switch (splitType) {
+      case EQUAL:
+        return new EqualSplit();
+      case UNEQUAL:
+        return new UnequalSplit();
+      case PERCENTAGE:
+        return new PercentageSplit();
+      default:
+        return null;
     }
+  }
 }

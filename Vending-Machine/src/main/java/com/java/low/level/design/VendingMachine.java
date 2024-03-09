@@ -2,42 +2,42 @@ package com.java.low.level.design;
 
 import com.java.low.level.design.VendingStates.State;
 import com.java.low.level.design.VendingStates.impl.IdleState;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class VendingMachine {
-    List<Coin> coins;
-    Inventory inventory;
-    State vendingMachineState;
 
-    public VendingMachine() {
-        this.coins = new ArrayList<>();
-        this.inventory = new Inventory(10);
-        this.vendingMachineState = new IdleState();
-    }
+  List<Coin> coins;
+  Inventory inventory;
+  State vendingMachineState;
 
-    public List<Coin> getCoins() {
-        return coins;
-    }
+  public VendingMachine() {
+    this.coins = new ArrayList<>();
+    this.inventory = new Inventory(10);
+    this.vendingMachineState = new IdleState();
+  }
 
-    public void setCoins(List<Coin> coins) {
-        this.coins = coins;
-    }
+  public List<Coin> getCoins() {
+    return coins;
+  }
 
-    public Inventory getInventory() {
-        return inventory;
-    }
+  public void setCoins(List<Coin> coins) {
+    this.coins = coins;
+  }
 
-    public void setInventory(Inventory inventory) {
-        this.inventory = inventory;
-    }
+  public Inventory getInventory() {
+    return inventory;
+  }
 
-    public State getVendingMachineState() {
-        return vendingMachineState;
-    }
+  public void setInventory(Inventory inventory) {
+    this.inventory = inventory;
+  }
 
-    public void setVendingMachineState(State vendingMachineState) {
-        this.vendingMachineState = vendingMachineState;
-    }
+  public State getVendingMachineState() {
+    return vendingMachineState;
+  }
+
+  public void setVendingMachineState(State vendingMachineState) {
+    this.vendingMachineState = vendingMachineState;
+  }
 }

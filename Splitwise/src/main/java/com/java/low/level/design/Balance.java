@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class Balance {
-    private double amountOwe;
-    private double amountGetBack;
+
+  private double amountOwe;
+  private double amountGetBack;
 }

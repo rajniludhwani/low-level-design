@@ -5,11 +5,12 @@ import lombok.Data;
 
 @Data
 public class Split {
-    private User user;
-    private double amountOwe;
 
-    public Split(User user, double amountOwe) {
-        this.user = user;
-        this.amountOwe = amountOwe;
-    }
+  private User user;
+  private double amountOwe;
+
+  public Split(User user, double amountOwe) {
+    this.user = user;
+    this.amountOwe = amountOwe;
+  }
 }

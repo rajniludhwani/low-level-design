@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.11</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.java.low.level.design</groupId>
-    <artifactId>low-level-design</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>Rate-Limiter</module>
-        <module>Vending-Machine</module>
-        <module>Logger-Chain-Responsibility</module>
-        <module>Consistent-Hashing</module>
-        <module>Splitwise</module>
-    </modules>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>low-level-design</artifactId>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <scope>provided</scope>
+      <version>1.18.30</version>
+    </dependency>
+  </dependencies>
+  <groupId>com.java.low.level.design</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <modules>
+    <module>Rate-Limiter</module>
+    <module>Vending-Machine</module>
+    <module>Logger-Chain-Responsibility</module>
+    <module>Consistent-Hashing</module>
+    <module>Splitwise</module>
+  </modules>
+  <packaging>pom</packaging>
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>2.6.11</version> <!-- lookup parent from repository -->
+  </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+  <version>1.0-SNAPSHOT</version>
 
 
 </project>
