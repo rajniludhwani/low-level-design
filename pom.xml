@@ -23,6 +23,7 @@
     <module>Logger-Chain-Responsibility</module>
     <module>Consistent-Hashing</module>
     <module>Splitwise</module>
+    <module>BookMyShow</module>
   </modules>
   <packaging>pom</packaging>
   <parent>
